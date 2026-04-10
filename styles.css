@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  margin: 10px 0;
+}
+
+.description {
+  color: #555;
+}
+
+.meta {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.high {
+  background: #ffe5e5;
+  color: #c00;
+}
+
+.status {
+  background: #e5f0ff;
+  color: #0044cc;
+}
+
+.dates {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.tags li {
+  background: #eee;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 2px solid blue;
+}
+
+/* Completed state */
+.completed .title {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .card {
+    padding: 15px;
+  }
+}
